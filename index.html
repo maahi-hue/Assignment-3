@@ -147,14 +147,14 @@
         <div
           class="hero-content flex-col-reverse lg:flex-row-reverse md:container mx-auto"
         >
-          <img src="assets/Rectangle.png" class="max-w-50% rounded-lg" />
+          <img src="assets/Rectangle.png" class="w-full" />
           <div class="relative max-w-50%">
             <img
               src="assets/Vector.png"
               alt=""
               class="hidden lg:block absolute -top-14 -left-10"
             />
-            <p class="text-center">
+            <p class="lg:text-left text-center">
               <button
                 class="btn rounded-full text-base font-extrabold text-[#494949]"
               >
@@ -164,13 +164,15 @@
             </p>
             <br />
             <br />
-            <h1 class="lg:text-4xl text-2xl font-extrabold text-center">
+            <h1
+              class="lg:text-4xl text-2xl font-extrabold lg:text-left text-center"
+            >
               We design thoughtful,
               <br />
               liveable spaces
             </h1>
             <p
-              class="py-6 text-base font-semibold text-[#494949] text-pretty text-center"
+              class="py-6 text-base font-semibold text-[#494949] text-pretty lg:text-left text-center"
             >
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
@@ -385,7 +387,65 @@
           </div>
         </div>
       </div>
+      <!-- ---------------------------------------lets connect(form) ---------------------------------->
+      <div
+        class="hero min-h-screen py-20"
+        style="background-image: url(assets/bg.jpg)"
+      >
+        <div class="hero-overlay bg-opacity-0"></div>
+        <div class="hero-content text-center">
+          <div class="max-w-2xl">
+            <button
+              class="btn rounded-full bg-[#ABEF5F80] text-base font-extrabold border border-rinterio-primary"
+            >
+              <i class="fa-solid fa-arrow-right rounded-full"></i>
+              Let’s Connect
+            </button>
+            <br />
+            <br />
+            <h1 class="lg:text-4xl text-2xl lg:font-extrabold font-bold">
+              Let’s Discuss Next Project
+            </h1>
+            <p class="font-semibold text-base text-[#494949] py-6 text-pretty">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <label class="input rounded-full text-left">
+                <input type="text" class="p-2" placeholder="First Name*" />
+              </label>
+              <label class="input rounded-full text-left">
+                <input type="text" class="p-2" placeholder="Last Name*" />
+              </label>
+
+              <label class="input rounded-full text-left">
+                <input type="text" class="p-2" placeholder="Phone Number*" />
+              </label>
+              <label class="input rounded-full text-left">
+                <input type="text" class="p-2" placeholder="Email Number*" />
+              </label>
+
+              <label class="input col-span-2 rounded-2xl text-left h-60">
+                <input
+                  type="text"
+                  class="p-2"
+                  placeholder="Write your message here"
+                />
+              </label>
+              <a
+                class="btn rounded-full bg-rinterio-primary text-xl font-extrabold col-span-2"
+              >
+                Send Mail
+                <i
+                  class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
     </main>
-    <footer></footer>
   </body>
 </html>
