@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,24 +76,28 @@
             tabindex="0"
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-50 p-2 shadow"
           >
-            <li><a>Home</a></li>
+            <li><a href="/">Home</a></li>
             <li>
-              <a>Services</a>
+              <a href="#services">Services</a>
             </li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li><a href="#form">Contact Us</a></li>
           </ul>
         </div>
         <div class="hidden lg:flex">
-          <ul class="menu menu-horizontal text-[#737373]">
+          <ul
+            class="menu menu-horizontal text-[#737373] transition-all duration-300 ease-in"
+          >
             <li class="text-[#494949] font-extrabold"><a>Home</a></li>
             <li>
-              <a>Services</a>
+              <a href="#services">Services</a>
             </li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li><a href="#form">Contact Us</a></li>
           </ul>
         </div>
         <div class="space-x-4 hidden lg:flex">
@@ -254,7 +258,7 @@
         </div>
       </div>
       <!-- -----------------------------how we work----------------------------- -->
-      <div class="hero bg-gray-200 w-100% min-h-screen">
+      <div class="hero bg-gray-200 w-100% min-h-screen" id="services">
         <div class="hero-content text-center">
           <div class="">
             <button
@@ -331,7 +335,10 @@
         </div>
       </div>
       <!-- ----------------our latest portfolio---------------------------->
-      <div class="hero min-h-screen py-10 lg:bg-base-100 md:container mx-auto">
+      <div
+        class="hero min-h-screen py-10 lg:bg-base-100 md:container mx-auto"
+        id="portfolio"
+      >
         <div class="hero-content text-center">
           <div class="">
             <button
@@ -430,6 +437,7 @@
       </div>
       <!-- ---------------------------------------lets connect(form) ---------------------------------->
       <div
+        id="form"
         class="hero min-h-screen py-10"
         style="background-image: url(assets/bg.jpg)"
       >
@@ -533,11 +541,10 @@
           <nav
             class="grid lg:grid-flow-col lg:gap-28 gap-8 text-[#E9E9E9] text-base font-medium"
           >
-            <a class="link link-hover">Home</a>
-            <a class="link link-hover">Services</a>
-            <a class="link link-hover">Portfolio</a>
-            <a class="link link-hover">Blogs</a>
-            <a class="link link-hover">Contact Us</a>
+            <a class="link link-hover" href="/">Home</a>
+            <a class="link link-hover" href="#services">Services</a>
+            <a class="link link-hover" href="#portfolio">Portfolio</a>
+            <a class="link link-hover" href="#form">Contact Us</a>
           </nav>
           <div>
             <a
