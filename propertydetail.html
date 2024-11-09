@@ -13,26 +13,106 @@
             font-family: "Manrope", sans-serif;
         }
     </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+    <!--  DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                        "rinterio-primary": "#ABEF5F",
+                    }
+                        < html lang="en" data- theme="light">
+
+                            <head>
+                                <meta charset="UTF-8" />
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                                <title>Document</title>
+    <!--  DaisyUI CDN -->
+                                <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+                                <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+
+      
+    </style>
+   
 </head>
 
 <body class="font-manrope bg-gray-50">
 
-    <!-- Header Section with Centered Navbar -->
-    <header class="container mx-auto py-5">
-        <nav class="flex items-center justify-center">
-            <!-- Logo -->
-            <a href="/" class="btn btn-ghost text-3xl font-extrabold text-[#ABEF5F] mx-auto">
-                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2.5 text-black"></i> Rinterio
-            </a>
-            <!-- Navbar Links -->
-            <ul class="flex space-x-10 text-gray-600 font-medium">
-                <li><a href="index.html" class="hover:text-[#ABEF5F]">Home</a></li>
-                <li><a href="services.html" class="hover:text-[#ABEF5F]">Services</a></li>
-                <li><a href="portfolio.html" class="hover:text-[#ABEF5F]">Portfolio</a></li>
-                <li><a href="blogs.html" class="hover:text-[#ABEF5F]">Blogs</a></li>
-                <li><a href="contact.html" class="hover:text-[#ABEF5F]">Contact Us</a></li>
+    <!-------------------------- navbar -------------------------->
+    <nav class="justify-between flex overflow-x-hidden py-2 overflow-y-hidden">
+        <div class="">
+            <a class="btn btn-ghost text-3xl font-extrabold">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2.5"></i>
+                Rinterio</a>
+        </div>
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-50 p-2 shadow">
+                <li><a>Home</a></li>
+                <li>
+                    <a>Services</a>
+                </li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
             </ul>
-        </nav>
+        </div>
+        <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal text-[#737373]">
+                <li class="text-[#494949] font-extrabold"><a>Home</a></li>
+                <li>
+                    <a>Services</a>
+                </li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="space-x-4 hidden lg:flex">
+            <button class="btn btn-circle bg-white">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn btn-circle bg-white">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <a class="btn rounded-full bg-rinterio-primary text-xl font-extrabold" href="booking.html">
+                Book Consult
+                <i class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"></i></a>
+        </div>
+    </nav>
     </header>
 
     <!-- Property Details Section -->
@@ -44,12 +124,12 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <!-- Add images for property gallery here -->
-                        <div class="swiper-slide"><img src="prop1.png" alt="Property Image 1"
-                                class="w-full rounded-lg"></div>
-                        <div class="swiper-slide"><img src="prop2.png" alt="Property Image 2"
-                                class="w-full rounded-lg"></div>
-                        <div class="swiper-slide"><img src="prop3.png" alt="Property Image 3"
-                                class="w-full rounded-lg"></div>
+                        <div class="swiper-slide"><img src="assets/prop1.png" alt="Property Image 1" class="w-full rounded-lg">
+                        </div>
+                        <div class="swiper-slide"><img src="prop2.png" alt="Property Image 2" class="w-full rounded-lg">
+                        </div>
+                        <div class="swiper-slide"><img src="prop3.png" alt="Property Image 3" class="w-full rounded-lg">
+                        </div>
                     </div>
                     <!-- Navigation buttons -->
                     <div class="swiper-button-next"></div>
@@ -75,7 +155,7 @@
                 </ul>
 
                 <!-- Contact CTA -->
-                <a href="consult.html"
+                <a href="booking.html"
                     class="btn mt-5 bg-[#ABEF5F] text-white font-semibold rounded-lg w-full py-3 text-center">
                     Schedule a Viewing
                 </a>
@@ -83,8 +163,8 @@
         </section>
 
         <!-- Additional Details -->
-        <section class="mt-10">
-            <h2 class="text-2xl font-bold text-gray-800">Property Description</h2>
+        <section class="mt-10"><br>
+            <h2 class="text-2xl font-bold text-gray-800">Property Description</h2><br>
             <p class="mt-4 text-gray-600">
                 This beautiful family home is designed with an open-concept layout, providing a warm and inviting space
                 for family gatherings. The modern kitchen features high-quality appliances, and the spacious backyard
@@ -93,47 +173,47 @@
             <p class="mt-2 text-gray-600">
                 Located close to schools, parks, and shopping centers, this home offers both convenience and
                 tranquility. Contact us today to learn more or schedule a visit.
-            </p>
+            </p><br><br>
         </section>
     </main>
+    <!-- ------------------------------------------footer--------------------------------- -->
+    <footer>
+        <footer class="footer footer-center bg-[#1C1C1C] text-base-content p-10">
+            <div>
+                <a class="btn btn-ghost text-3xl font-extrabold text-slate-50">
+                    <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-black rounded-full p-2.5"></i>
+                    Rinterio</a>
+            </div>
+            <p class="text-wrap text-[#737373] text-base font-medium">
+                The barn house captivates with its blend of rustic charm and modern
+                sophistication,<br />
+                featuring weathered wood, sleek metal accents.
+            </p>
+            <nav class="grid lg:grid-flow-col lg:gap-28 gap-8 text-[#E9E9E9] text-base font-medium">
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">Services</a>
+                <a class="link link-hover">Portfolio</a>
+                <a class="link link-hover">Blogs</a>
+                <a class="link link-hover">Contact Us</a>
+            </nav>
+            <div>
+                <a class="btn rounded-full bg-rinterio-primary text-xl font-extrabold border-none" href="booking.html">
+                    Book Consult
+                    <i class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"></i></a>
+            </div>
+        </footer>
+    </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                        const swiper = new Swiper('.swiper-container', {
+                            navigation: {
+                            nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
             },
-            loop: true,
+                        loop: true,
         });
     </script>
-
-    <!-- Footer Section -->
-    <footer class="footer footer-center bg-[#1C1C1C] text-base-content p-10 mt-20">
-        <div>
-            <a class="btn btn-ghost text-3xl font-extrabold text-slate-50">
-                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-black rounded-full p-2.5"></i> Rinterio
-            </a>
-        </div>
-        <p class="text-[#737373] text-base font-medium max-w-md mx-auto">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood
-            and sleek metal accents.
-        </p>
-        <nav class="flex space-x-10 text-[#E9E9E9] text-base font-medium mt-4">
-            <a href="index.html" class="link link-hover">Home</a>
-            <a href="services.html" class="link link-hover">Services</a>
-            <a href="portfolio.html" class="link link-hover">Portfolio</a>
-            <a href="blogs.html" class="link link-hover">Blogs</a>
-            <a href="contact.html" class="link link-hover">Contact Us</a>
-        </nav>
-        <div class="mt-4">
-            <a class="btn rounded-full bg-rinterio-primary text-xl font-extrabold border-none" href="booking.html">
-                Book Consult
-                <i class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"></i>
-            </a>
-        </div>
-    </footer>
-
 </body>
 
 </html>
