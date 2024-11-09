@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Real Estate Website</title>
   <!--  DaisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "rinterio-primary": "#ABEF5F",
+          }
+            < html lang="en" data- theme="light">
+
+              <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Document</title>
+  <!--  DaisyUI CDN -->
+                <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+                <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome Link -->
   <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
   <!-- google font link -->
@@ -40,15 +68,17 @@
     }
   </style>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: "#da373d",
-            "rinterio-primary": "#ABEF5F",
-          },
-        },
-      },
+              tailwind.config = {
+                theme: {
+                extend:
+              {
+                colors: {
+                clifford: "#da373d",
+              "rinterio-primary": "#ABEF5F",
+              f25009f489c4baf36e693fd7102cf23b888a8134
+                         },
+    },
+    },
     };
   </script>
 </head>
@@ -166,11 +196,11 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+              const swiper = new Swiper(".mySwiper", {
+                loop: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
         },
       });
     </script>
@@ -436,37 +466,24 @@
           <form action="https://formspree.io/f/xanyopbe" method="POST">
             <div class="md:flex md:flex-wrap">
               <div class="md:w-1/2 p-2">
-                <input 
-                  type="text" 
-                  name="name" 
-                  placeholder="Your Name*" 
-                  class="input w-full p-2 rounded-full" 
-                  required 
-                />
+                <input type="text" name="name" placeholder="Your Name*" class="input w-full p-2 rounded-full"
+                  required />
               </div>
-          
+
               <div class="md:w-1/2 p-2">
-                <input 
-                  type="email" 
-                  name="email" 
-                  placeholder="Email*" 
-                  class="input w-full p-2 rounded-full" 
-                  required 
-                />
+                <input type="email" name="email" placeholder="Email*" class="input w-full p-2 rounded-full" required />
               </div>
             </div>
-          
+
             <div>
-              <textarea 
-                name="message" 
-                placeholder="Write your message here" 
-                class="input w-full h-60 rounded-3xl placeholder:top-0 placeholder:absolute relative placeholder:mt-3" 
-                required 
-              ></textarea>
+              <textarea name="message" placeholder="Write your message here"
+                class="input w-full h-60 rounded-3xl placeholder:top-0 placeholder:absolute relative placeholder:mt-3"
+                required></textarea>
             </div>
-          
+
             <div class="text-center mt-4">
-              <button type="submit" class="btn bg-[#ABEF5F80] text-base font-extrabold border border-rinterio-primary">Send Message</button>
+              <button type="submit"
+                class="btn bg-[#ABEF5F80] text-base font-extrabold border border-rinterio-primary">Send Message</button>
             </div>
           </form>
         </div>
