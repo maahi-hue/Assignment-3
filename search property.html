@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Consultation Form</title>
+
+    <!-- DaisyUI & TailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                        "rinterio-primary": "#ABEF5F",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="h-screen m-0 font-manrope">
+    <nav class="justify-between flex overflow-x-hidden md:container mx-auto py-5">
+        <div>
+            <a class="btn btn-ghost text-3xl font-extrabold">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2.5"></i>
+                Rinterio
+            </a>
+        </div>
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-50 p-2 shadow">
+                <li><a href="/">Home</a></li>
+                <li>
+                    <a href="/#services">Services</a>
+                </li>
+                <li>
+                    <a href="/#portfolio">Portfolio</a>
+                </li>
+                <li><a href="/#form">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal text-[#737373] transition-all duration-300 ease-in">
+                <li class="text-[#494949] font-extrabold"><a href="/">Home</a></li>
+                <li>
+                    <a href="/#services">Services</a>
+                </li>
+                <li>
+                    <a href="/#portfolio">Portfolio</a>
+                </li>
+                <li><a href="/#form">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="space-x-4 hidden lg:flex">
+            <button class="btn btn-circle bg-white">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a class="btn rounded-full bg-rinterio-primary text-xl font-extrabold" href="booking.html">
+                Book Consult
+                <i class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+        <div class="card bg-base-200 p-5">
+            <div class="flex flex-col">
+                <img src="assets/prop4.jpg" class="max-w-sm rounded-lg shadow-2xl w-[1200px]" />
+                <div>
+                    <h1 class="text-3xl font-bold">Flat in Dhaka</h1>
+                    <p class="py-2">Size: 3500 sq.ft</p>
+                    <p class="pb-2">Bedrooms: 2</p>
+                    <p class="pb-2">Bathrooms: 3</p>
+                    <p class="pb-2">Price: Call for net price</p>
+                    <button
+                        class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-rinterio-primary">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-200 p-5">
+            <div class="flex flex-col">
+                <img src="assets/prop5.png" class="max-w-sm rounded-lg shadow-2xl w-[1200px]" />
+                <div>
+                    <h1 class="text-3xl mt-2 font-bold">
+                        Apartment in Bashundhara R/A, Dhaka
+                    </h1>
+                    <p class="py-2">Size: 1570 sq.ft</p>
+                    <p class="pb-2">Bedrooms: 3</p>
+                    <p class="pb-2">Bathrooms: 3</p>
+                    <p class="pb-2">Price: Call for net price</p>
+                    <button
+                        class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-rinterio-primary">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-200 p-5">
+            <div class="flex flex-col">
+                <img src="assets/prop6.jpeg" class="max-w-sm rounded-lg shadow-2xl w-[1200px]" />
+                <div>
+                    <h1 class="text-3xl mt-2 font-bold">
+                        South-Facing Apartment in Savar, Dhaka
+                    </h1>
+
+                    <p class="py-2">Size: 1400 sq.ft</p>
+                    <p class="pb-2">Bedrooms: 3</p>
+                    <p class="pb-2">Bathrooms: 3</p>
+                    <p class="pb-2">Price: Tk 5,500/sq.ft</p>
+
+                    <button
+                        class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-rinterio-primary">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-200 p-5">
+            <div class="flex flex-col">
+                <img src="assets/prop7.jpg" class="max-w-sm rounded-lg shadow-2xl w-[1200px] h-[250px] object-cover" />
+                <div>
+                    <h1 class="text-3xl mt-2 font-bold">
+                        Ready Apartment in Rupnagar, Dhaka
+                    </h1>
+
+                    <p class="py-2">Size: 700 sq.ft</p>
+                    <p class="pb-2">Bedrooms: 2</p>
+                    <p class="pb-2">Bathrooms: 2</p>
+                    <p class="pb-2">Price: Tk 4,300/sq.ft</p>
+
+                    <button
+                        class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-rinterio-primary">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-200 p-5">
+            <div class="flex flex-col">
+                <img src="assets/prop8.jpg" class="max-w-sm rounded-lg shadow-2xl w-[1200px] h-[250px]" />
+                <div>
+                    <h1 class="text-3xl mt-2 font-bold">
+                        Duplex Flat in Mohammadpur, Dhaka
+                    </h1>
+
+                    <p class="py-2">Size: 4271 sq.ft</p>
+                    <p class="pb-2">Bedrooms: 3</p>
+                    <p class="pb-2">Bathrooms: 4</p>
+                    <p class="pb-2">Price: Call for net price</p>
+
+                    <button
+                        class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-rinterio-primary">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-200 p-5">
+            <div class="flex flex-col">
+                <img src="assets/prop3.jpg" class="max-w-sm rounded-lg shadow-2xl w-[1200px] h-[250px]" />
+                <div>
+                    <h1 class="text-3xl mt-2 font-bold">Apartment in Madaripur</h1>
+
+                    <p class="py-2">Size: 5560 sq.ft</p>
+                    <p class="pb-2">Bedrooms: 4</p>
+                    <p class="pb-2">Bathrooms: 5</p>
+                    <p class="pb-2">Price: Tk 5,500/sq.ft</p>
+
+                    <button
+                        class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-rinterio-primary">
+                        Purchase
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-center bg-[#1C1C1C] text-base-content p-10">
+        <div>
+            <a class="btn btn-ghost text-3xl font-extrabold text-slate-50">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-black rounded-full p-2.5"></i>
+                Rinterio
+            </a>
+        </div>
+        <p class="text-wrap text-[#737373] text-base font-medium">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <nav class="grid lg:grid-flow-col lg:gap-28 gap-8 text-[#E9E9E9] text-base font-medium">
+            <a href="/" class="link link-hover">Home</a>
+            <a href="/#services" class="link link-hover">Services</a>
+            <a href="/#portfolio" class="link link-hover">Portfolio</a>
+            <a href="/#form" class="link link-hover">Contact Us</a>
+        </nav>
+        <div>
+            <a class="btn rounded-full bg-rinterio-primary text-xl font-extrabold border-none" href="booking.html">
+                Book Consult
+                <i class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
