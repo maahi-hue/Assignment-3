@@ -12,6 +12,19 @@
   <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
   <!-- google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!--  DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
   <style>
@@ -27,60 +40,48 @@
             clifford: "#da373d",
             "rinterio-primary": "#ABEF5F",
           }
-            < html lang="en" data- theme="light">
+  </script>
+  < html lang="en" data- theme="light">
 
-              <head>
-                <meta charset="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Document</title>
-  <!--  DaisyUI CDN -->
-                <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-                <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome Link -->
-  <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
-  <style>
-    .font-manrope {
-      font-family: "Manrope", sans-serif;
-    }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: #b0b0b0;
-      /* Ash/light gray color */
-      padding: 10px;
-      /* Add more padding */
-      font-size: 30px;
-      /* Increase font size for better visibility */
-    }
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
 
-    /* Optional: Adjust positioning of buttons to avoid overlap */
-    .swiper-button-next {
-      right: 10px;
-    }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #b0b0b0;
+        /* Ash/light gray color */
+        padding: 10px;
+        /* Add more padding */
+        font-size: 30px;
+        /* Increase font size for better visibility */
+      }
 
-    .swiper-button-prev {
-      left: 10px;
-    }
-  </style>
-  <script>
-              tailwind.config = {
-                theme: {
-                extend:
-              {
-                colors: {
-                clifford: "#da373d",
-              "rinterio-primary": "#ABEF5F",
-              f25009f489c4baf36e693fd7102cf23b888a8134
-                         },
+      /* Optional: Adjust positioning of buttons to avoid overlap */
+      .swiper-button-next {
+        right: 10px;
+      }
+
+      .swiper-button-prev {
+        left: 10px;
+      }
+    </style>
+
+    tailwind.config = {
+    theme: {
+    extend:
+    {
+    colors: {
+    clifford: "#da373d",
+    "rinterio-primary": "#ABEF5F",
+    f25009f489c4baf36e693fd7102cf23b888a8134
+    },
     },
     },
     };
-  </script>
+    </script>
 </head>
 
 <body class="font-manrope bg-gradient-to-b from-gray-200 to-slate-50">
@@ -197,13 +198,13 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+              const swiper = new Swiper(".mySwiper", {
+                loop: true,
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
     </script>
   </header>
   <main class="">
@@ -214,10 +215,11 @@
         <div class="relative max-w-50%">
           <img src="assets/Vector.png" alt="" class="hidden lg:block absolute -top-14 -left-10" />
           <p class="lg:text-left text-center">
-            <button class="btn rounded-full text-base font-extrabold text-[#494949]">
+            <a href="about us.html" class="btn rounded-full text-base font-extrabold text-[#494949]">
               <i class="fa-solid fa-arrow-right"></i>
+              
               About Us
-            </button>
+            </a>
           </p>
           <br />
           <br />
