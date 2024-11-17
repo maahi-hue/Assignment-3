@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Real Estate Website</title>
   <!--  DaisyUI CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -26,9 +26,59 @@
           colors: {
             clifford: "#da373d",
             "rinterio-primary": "#ABEF5F",
-          },
-        },
-      },
+          }
+            < html lang="en" data- theme="light">
+
+              <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Document</title>
+  <!--  DaisyUI CDN -->
+                <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+                <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #b0b0b0;
+      /* Ash/light gray color */
+      padding: 10px;
+      /* Add more padding */
+      font-size: 30px;
+      /* Increase font size for better visibility */
+    }
+
+    /* Optional: Adjust positioning of buttons to avoid overlap */
+    .swiper-button-next {
+      right: 10px;
+    }
+
+    .swiper-button-prev {
+      left: 10px;
+    }
+  </style>
+  <script>
+              tailwind.config = {
+                theme: {
+                extend:
+              {
+                colors: {
+                clifford: "#da373d",
+              "rinterio-primary": "#ABEF5F",
+              f25009f489c4baf36e693fd7102cf23b888a8134
+                         },
+    },
+    },
     };
   </script>
 </head>
@@ -36,8 +86,9 @@
 <body class="font-manrope bg-gradient-to-b from-gray-200 to-slate-50">
   <header class="md:container mx-auto py-5">
     <!-------------------------- navbar -------------------------->
-    <nav class="justify-between flex overflow-x-hidden py-2 overflow-y-hidden">
-      <div class="">
+    <nav
+      class="justify-between flex overflow-x-hidden py-2 overflow-y-hidden fixed top-0 left-0 w-full bg-white shadow-md z-50">
+      <div>
         <a class="btn btn-ghost text-3xl font-extrabold">
           <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2.5"></i>
           Rinterio</a>
@@ -60,7 +111,7 @@
         </ul>
       </div>
       <div class="hidden lg:flex">
-        <ul class="menu menu-horizontal text-[#737373] transition-all duration-300 ease-in">
+        <ul class="mr-5 menu menu-horizontal text-[#737373] transition-all duration-300 ease-in">
           <li class="text-[#494949] font-extrabold"><a>Home</a></li>
           <li>
             <a href="#services">Services</a>
@@ -80,31 +131,80 @@
           <i class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"></i></a>
       </div>
     </nav>
+
     <!-- -------------------------------banner-------------------------------- -->
-    <section>
-      <div class="hero min-h-screen">
-        <div class="hero-content text-center">
-          <div class="">
-            <img src="assets/banner.png" alt="" class="mx-auto" />
-            <br />
+    <section class="min-h-screen flex items-center justify-center bg-white">
+      <div class="swiper mySwiper w-full max-w-3xl">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide text-center p-8">
+            <img src="assets/banner.png" alt="Banner 1" class="mx-auto mb-4" />
             <h1 class="lg:text-6xl text-3xl font-extrabold text-pretty">
               A barn house of this design has a striking appearance
             </h1>
-            <br />
             <p class="text-pretty text-base py-6 text-[#494949]">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents, and large windows that flood the space with natural
               light.
             </p>
-            <button class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-rinterio-primary">
+            <button class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-[#ABEF5F]">
               View Details
-              <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2"></i>
+              <i class="fas fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2 ml-2"></i>
+            </button>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide text-center p-8">
+            <img src="assets/banner2.png" alt="Banner 2" class="mx-auto mb-4" />
+            <h1 class="lg:text-6xl text-3xl font-extrabold text-pretty">
+              Spacious Interiors with Modern Designs
+            </h1>
+            <p class="text-pretty text-base py-6 text-[#494949]">
+              Experience open floor plans that combine style and functionality,
+              creating a cozy and luxurious ambiance in every corner.
+            </p>
+            <button class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-[#ABEF5F]">
+              View Details
+              <i class="fas fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2 ml-2"></i>
+            </button>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide text-center p-8">
+            <img src="assets/banner3.png" alt="Banner 3" class="mx-auto mb-4" />
+            <h1 class="lg:text-6xl text-3xl font-extrabold text-pretty">
+              A Perfect Blend of Comfort and Style
+            </h1>
+            <p class="text-pretty text-base py-6 text-[#494949]">
+              Discover a living space designed to balance aesthetics with
+              everyday practicality, ensuring a welcoming home for you.
+            </p>
+            <button class="btn rounded-full bg-[#ABEF5F80] text-lg font-extrabold border border-[#ABEF5F]">
+              View Details
+              <i class="fas fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2 ml-2"></i>
             </button>
           </div>
         </div>
+
+        <!-- Swiper Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </header>
   <main class="">
     <!-- ------------------------------about us---------------------------------- -->
