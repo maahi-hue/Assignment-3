@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details | Real Estate</title>
+
+    <!-- DaisyUI & TailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8f4e330a44.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                        "rinterio-primary": "#ABEF5F",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-manrope bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="justify-between flex overflow-x-hidden overflow-y-hidden md:container mx-auto py-5">
+        <div>
+            <a class="btn btn-ghost text-3xl font-extrabold">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2.5"></i> Rinterio
+            </a>
+        </div>
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-50 p-2 shadow">
+                <li><a href="/">Home</a></li>
+                <li>
+                    <a href="/#services">Services</a>
+                </li>
+                <li>
+                    <a href="/#portfolio">Portfolio</a>
+                </li>
+                <li><a href="/#form">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="hidden lg:flex ">
+            <ul class="menu menu-horizontal text-[#737373] transition-all duration-300 ease-in">
+                <li class="text-[#494949] font-extrabold"><a href="/">Home</a></li>
+                <li>
+                    <a href="/#services">Services</a>
+                </li>
+                <li>
+                    <a href="/#portfolio">Portfolio</a>
+                </li>
+                <li><a href="/#form">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="space-x-4 hidden lg:flex">
+            <button class="btn btn-circle bg-white">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a class="btn rounded-full bg-rinterio-primary text-xl font-extrabold" href="booking.html">
+                Book Consult
+                <i class="fa-solid text-[#ABEF5F] p-2.5 fa-arrow-right -rotate-45 bg-black rounded-full"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Property Details Section -->
+    <main class=" mx-auto mt-10 md:container py-5">
+        <section class="flex flex-col lg:flex-row gap-10">
+            <!-- Property Image Gallery -->
+            <div class="lg:w-2/3 pl-8">
+                <div class="carousel carousel-center rounded-box">
+                    <div class="carousel-item">
+                        <img src="assets/prop5.png" alt="Property 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/prop2.jpg" alt="Property 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/prop8.jpg" alt="Property 3" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property Information -->
+            <div class="lg:w-1/3 space-y-4">
+                <h1 class="text-3xl font-bold text-gray-800">Luxury Villa in Dhaka</h1>
+                <p class="text-lg text-gray-600">Located in a peaceful neighborhood, this spacious family home offers
+                    modern amenities and an open layout. Perfect for those seeking comfort and convenience.</p>
+                <p class="text-2xl font-semibold text-[#ABEF5F]">Type : Buy </p>
+                <p class="text-2xl font-semibold text-[#ABEF5F]">20,000,000 BDT</p>
+
+                <!-- Features -->
+                <h2 class="text-xl font-semibold mt-4">Features</h2>
+                <ul class="list-disc pl-5 text-gray-600">
+                    <li>3 Bedrooms</li>
+                    <li>2 Bathrooms</li>
+                    <li>Modern Kitchen</li>
+                    <li>Spacious Backyard</li>
+                    <li>2-Car Garage</li>
+                </ul>
+
+                <!-- Contact CTA -->
+                <a href="booking.html"
+                    class="btn mt-5 bg-[#ABEF5F] text-white font-semibold rounded-lg w-full py-3 text-center">
+                    Schedule a Viewing
+                </a>
+            </div>
+        </section>
+
+        <!-- Additional Details -->
+        <section class="mt-10">
+            <h2 class="text-2xl font-bold text-gray-800"  style="padding-left: 10px;">Property Description</h2>
+            <p class="mt-4 text-gray-600"  style="padding-left: 10px;">
+                This beautiful family home is designed with an open-concept layout, providing a warm and inviting space
+                for family gatherings. The modern kitchen features high-quality appliances, and the spacious backyard
+                offers plenty of room for outdoor activities.
+            </p>
+            <p class="mt-2 text-gray-600"  style="padding-left: 10px;">
+                Located close to schools, parks, and shopping centers, this home offers both convenience and
+                tranquility. Contact us today to learn more or schedule a visit.
+            </p>
+        </section>
+    </main>
+
+    <!-- ------------------------------------------footer--------------------------------- -->
+    
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-between">
+            <!-- Logo and Description -->
+            <div class="mb-6 w-full md:w-1/3">
+              <a class="btn btn-ghost text-3xl font-extrabold">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-2.5"></i>
+                Rinterio</a><br>
+              <div class="flex items-center mt-4">
+                <i class="bx bx-map text-yellow-400 text-xl mr-2"></i>
+                <span class="text-gray-400">Find your dream home, make memories last.<br>123 street, Chattogram.</span>
+              </div>
+            </div>
+           
+                  <!-- Facility Links -->
+                  <div class="w-full md:w-2/3 flex flex-wrap justify-between">
+                    <ul class="mb-4 md:mb-0">
+                      <h4 class="text-base font-semibold mb-1">Facility</h4>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Property Viewing Assistance</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Maintenance & Repairs</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Relocation Services</a></li>
+                    </ul>
+                    <ul class="mb-4 md:mb-0">
+                      <h4 class="text-base font-semibold mb-1">Support</h4>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Financial Advice & Mortgages</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">24/7 Customer Support</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Legal Assistance</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Online Inquiry & Chat Support</a></li>
+                    </ul>
+                    <ul>
+                      <h4 class="text-base font-semibold mb-1">Explore More</h4>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">About Us</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">FAQs</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Private Policy</a></li>
+                      <li><a href="#" class="text-gray-400 hover:text-white text-sm">Help Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-gray-900 text-center py-2 mt-4">
+                <marquee direction="right" class="text-xs text-gray-500">
+                  @Rinterio. #Group-D(6CF). All rights are reserved
+                </marquee>
+              </div>
+            </footer>
+  
+
+
+</body>
